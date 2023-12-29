@@ -1,0 +1,15 @@
+// const app = require("./app");
+// const fs = require("fs");
+// fs.writeFileSync("hello.txt", "Allah is great");
+// fs.writeFileSync('hello2.txt',"Allah is one")
+// console.log("Hello World",__dirname)                                    
+// console.log("Hello World file",__filename)                                    
+// fs.writeFileSync("somi.txt",'Never miss any salah ok remember it')
+
+
+
+const http = require('http')
+http.createServer((req,res)=>{
+res.write('Hello World')
+res.end()
+}).listen(4500)
