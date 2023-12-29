@@ -1,0 +1,18 @@
+  module.exports={
+    x:10,
+    y:20,
+    z:()=>{
+        return 30
+    }
+}
+
+let fs = require('fs').writeFileSync
+fs('somio.txt','Allah is one')
+
+const app = require("./app");
+const fs = require("fs");
+fs.writeFileSync("hello.txt", "Allah is great");
+fs.writeFileSync('hello2.txt',"Allah is one")
+console.log("Hello World",__dirname)                                    
+console.log("Hello World file",__filename)                                    
+fs.writeFileSync("somi.txt",'Never miss any salah ok remember it')
