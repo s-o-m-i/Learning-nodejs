@@ -1,0 +1,6 @@
+console.log('learning package json')
+const colors = require('colors')
+console.log('colors'.red)
+
+// npm init to create package.json
+// npm install colors
