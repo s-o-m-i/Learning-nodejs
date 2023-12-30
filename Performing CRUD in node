@@ -1,0 +1,32 @@
+
+// const fs = require('fs')
+// const path = require('path')
+// const Crud = path.join(__dirname,'CRUD')
+// const filePath = `${Crud}/home.txt`
+
+// // create
+
+// // fs.writeFileSync(filePath,'im home')
+// // console.log(filepath)
+
+// // read
+// // fs.readFile(filePath,'utf8',(err,item)=>{
+// // console.log(item)
+// // })
+
+// // update
+// // fs.appendFile(filePath,' and file name is home',(err)=>{
+// //   if(!err){
+// //     console.log('updated successfully')
+// //   }
+// // })
+
+// // rename
+// // fs.rename(filePath,`${Crud}/fruit.txt`,(err)=>{
+// //   if(!err){
+// //         console.log('rename successfully')
+// //       } 
+// // })
+
+// // delete
+// fs.unlinkSync(`${Crud}/fruit.txt`)
