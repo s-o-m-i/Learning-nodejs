@@ -1,0 +1,26 @@
+const express = require("express");
+const app = express();
+
+const reqFilter = (req, res, next) => {
+  if ((!req.query.age)) {
+    res.send("Age is required");
+  }
+  else if((req.query.age<18)) {
+    res.send("18 plus is required");
+  }
+  else{
+    next();
+    console.log("Request received");
+  }
+};
+
+app.use(reqFilter);
+
+app.get("", (req, res) => {
+  res.send("Hello World");
+});
+app.get("/users", (req, res) => {
+  res.send("users page");
+});
+
+app.listen(3000);
